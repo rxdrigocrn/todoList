@@ -1,0 +1,43 @@
+.task ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task ul li {
+    display: flex;
+    gap: 12px;
+    padding: 0 12px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li .form-control {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.task ul li:hover {
+    background-color: #ebebeb
+}
+
+.task ul li input {
+    transform: scale(1.4);
+}
+
+.tasks {
+    margin-bottom: 30px;
+}
+
+.delete-button {
+    cursor: pointer;
+}
+
+.form-control input:checked + label {
+    text-decoration: line-through; 
+    color: #999; 
+}

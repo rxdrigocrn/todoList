@@ -1,0 +1,58 @@
+.add-task-container{
+    display: flex;
+    flex-direction: column;
+    
+    z-index: 1;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 14px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.add-task-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.add-task-container input{
+    padding: 2px 10px;
+}
+.form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.close-button{
+    display: flex;
+    justify-content: end;
+}
+
+.close-button button{
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    cursor: pointer;
+}
+.close-button button:hover{
+    background-color: #ebebeb;
+}
+.add-task-container input[type="submit"]{
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+.add-task-container input[type="submit"]:hover{
+   background-color: #a3a3a3c7;
+}

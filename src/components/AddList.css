@@ -1,0 +1,56 @@
+.add-list-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    gap: 12px;
+}
+
+.add-list-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.add-list-container input{
+    padding: 2px 2px;
+}
+.form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.close-button{
+    display: flex;
+    justify-content: end;
+}
+
+.close-button button{
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+}
+.close-button button:hover{
+    background-color: #ebebeb;
+}
+.add-list-container input[type="submit"]{
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+.add-list-container input[type="submit"]:hover{
+   background-color: #a3a3a3c7;
+}
