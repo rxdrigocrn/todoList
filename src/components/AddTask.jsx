@@ -20,21 +20,21 @@ const AddTask = ({ onAddTask, onClose }) => {
 
     return (
         <>
-            <div className="add-task-container">
-                <div className="close-button" onClick={onClose}>
-                    <button>
-                        <IoClose />
-                    </button>
-                </div>
-                <form action="" onSubmit={handleAddNewTask}>
-                    <div className="form-control">
-                        <label>Add New Task</label>
-                        <input type="text" placeholder='Write a task name' onChange={(e) => setNewTask(e.target.value)} value={newTask} />
-                    </div>
-                    <input type="submit" value={"Add"} />
-                </form>
+           <div className="overlay" onClick={onClose}></div>
+    <div className="add-task-container">
+        <div className="close-button" onClick={onClose}>
+            <button>
+                <IoClose />
+            </button>
+        </div>
+        <form action="" onSubmit={handleAddNewTask}>
+            <div className="form-control">
+                <label>Add New Task</label>
+                <input type="text" placeholder='Write a task name' onChange={(e) => setNewTask(e.target.value)} value={newTask} />
             </div>
-
+            <input type="submit" value={"Add"} />
+        </form>
+    </div>
         </>
     )
 }

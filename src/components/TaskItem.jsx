@@ -1,4 +1,3 @@
-// TaskItem.js
 import './TaskItem.css';
 import { FaTrash } from "react-icons/fa";
 
@@ -20,7 +19,7 @@ const TaskItem = ({ tasks, onDeleteTask }) => {
                   </div>
                 </li>
               ))
-            ) : "Crie uma lista para iniciar suas tarefas!"}
+            ) : "Crie suas Tasks!"}
           </ul>
         </div>
       </div>

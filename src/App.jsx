@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { closestCorners, DndContext } from '@dnd-kit/core';
+
 import './App.css';
-import ListItem from './components/ListItem';
+
 import TaskManager from './components/TaskManager';
 import Tasks from './components/Tasks';
 
 function App() {
   const [selectedList, setSelectedList] = useState(null);
-  
+
   const today = new Date();
   const nameDay = { weekday: 'long' };
   const nomeDoDia = today.toLocaleDateString('en-US', nameDay);
@@ -20,6 +22,8 @@ function App() {
   };
 
   return (
+
+
     <>
       <div className="main-container">
         <div className="sidebar">
@@ -33,7 +37,7 @@ function App() {
 
           <div className="main-content">
             <div className="tasks">
-              <TaskManager itemList={selectedList} />
+                <TaskManager itemList={selectedList} />
             </div>
           </div>
         </div>

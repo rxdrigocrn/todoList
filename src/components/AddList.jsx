@@ -24,7 +24,7 @@ const AddList = ({ onAddList, onClose }) => {
             <div className="add-list-container">
                 <form action="" onSubmit={handleAddList}>
                     <div className="form-control">
-                        <input type="text" placeholder='Write a task name' onChange={(e) => setNewList(e.target.value)}/>
+                        <input type="text" placeholder='Write a list name' onChange={(e) => setNewList(e.target.value)}/>
                     </div>
                     <input type="submit" value={"Add"} />
                 </form>
